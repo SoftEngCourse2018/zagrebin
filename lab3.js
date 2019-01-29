@@ -20,7 +20,7 @@ function getEquation(arr){
       if (i == 0 ) {
         var th = document.createElement('th');
         if (j != 0) th.innerHTML = j;
-        if (j == sizeCell-1) th.innerHTML = "Запасы";
+        if (j == sizeCell-1) th.innerHTML = "Запасы
         tr.appendChild(th);
       }else {
         var td = document.createElement('td');
