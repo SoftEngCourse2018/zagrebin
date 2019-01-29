@@ -10,11 +10,7 @@ function getEquation(arr){
         if (j == 0) {
           td.id = "Y"
           if (i != 0) td.innerHTML = i;
-          if (i == sizeRow - 1) td.innerHTML = "Потребности";
-        }else if (j != sizeCell-1 || i != sizeRow-1) {
-          var input = document.createElement('input');
-          input.type = "number";
-          if (arr == undefined) {
+          if (i == sizeRo
             if (document.getElementById('check1').checked)
               input.value = getRandom();
             else
