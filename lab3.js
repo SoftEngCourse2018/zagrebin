@@ -6,24 +6,7 @@ function getEquation(arr){
 
 	var h2 = document.createElement('h2');
   h2.innerHTML = "Введите значения";
- 	eq.appendChild(h2);
-	var sizeRow = parseInt(document.getElementById("x").value)+2;
-	var sizeCell = parseInt(document.getElementById("y").value)+2;
-  	if (arr != undefined) {
-  		sizeRow = arr.length+1;
-  		sizeCell = arr[0].length+1;
-  	}
-  var table = document.createElement('table');
-  for (var i = 0; i < sizeRow; i++) {
-    var tr = document.createElement('tr');
-    for (var j = 0; j < sizeCell; j++) {
-      if (i == 0 ) {
-        var th = document.createElement('th');
-        if (j != 0) th.innerHTML = j;
-        if (j == sizeCell-1) th.innerHTML = "Запасы
-        tr.appendChild(th);
-      }else {
-        var td = document.createElement('td');
+
         if (j == 0) {
           td.id = "Y"
           if (i != 0) td.innerHTML = i;
