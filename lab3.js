@@ -17,7 +17,7 @@ function getEquation(arr){
               input.value = 0;
           }else{
             input.value = arr[i-1][j-1];
-          }
+          
           td.appendChild(input);
         }
         tr.appendChild(td);
